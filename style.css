@@ -1,0 +1,197 @@
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #d1d3fc;
+}
+.nav-header {
+  background-color: #ededed;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+}
+.main-nav ul {
+  margin: 0;
+  overflow: hidden;
+  padding-left: 0;
+}
+.main-nav li {
+  list-style-type: none;
+  float: left;
+  height: 46px;
+}
+.main-nav li a{
+  text-decoration: none;
+  color: #636363;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 10px;
+  display: block;
+  border-bottom: 4px solid #004cff;
+  -webkit-transition: height .2s, color .2s;
+  -moz-transition: height .2s, color .2s;
+  -o-transition: height .2s, color .2s;
+  transition: height .2s, color .2s;
+}
+.main-nav li a:hover {
+  color: #004cff;
+  height: 42px;
+  -webkit-transition: height .2s, color .2s;
+  -moz-transition: height .2s, color .2s;
+  -o-transition: height .2s, color .2s;
+  transition: height .2s, color .2s
+}
+
+.page-container {
+  width: 890px;
+  margin: 0 auto;
+}
+
+.page-content {
+  margin-top: 56px;
+}
+
+.related-content {
+  float: left;
+  width: 300px;
+}
+.news-feed {
+  margin-left: 310px;
+}
+
+.box {
+  margin-bottom: 10px;
+  background-color: #f3f3f3;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.section-title {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #666;
+}
+.news-feed .box {
+  padding: 0;
+}
+.news-feed .tweet-list > li,
+.news-feed .section-title {
+  border-bottom: 1px solid #ddd;
+}
+.news-feed .section-title {
+  padding: 10px;
+}
+.tweet {
+  padding: 10px 10px;
+}
+.tweet-list > li:last-child {
+  padding-bottom: 8px;
+}
+.tweet:hover {
+  background-color: #eaeaea;
+
+}
+.news-feed .tweet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tweet-user-img {
+  float: left;
+}
+.tweet-user-img img {
+  border-radius: 8px;
+}
+.tweet-user-img {
+  float: left;
+}
+.tweet-content footer,
+.tweet-content p,
+.tweet-content .tweet-actions {
+  padding-left: 0;
+  margin-left: 80px;
+}
+.tweet-actions > li {
+  display: inline;
+  text-decoration: none;
+  position: relative;
+}
+.tweet-actions li a {
+  text-decoration: none;
+  margin-right: 5px;
+}
+.tweet-actions li a:focus {
+  outline: hidden;
+  outline: none;
+}
+
+.more-actions {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 3px #bcbcbc;
+  -moz-box-shadow: 0 0 3px #bcbcbc;
+  box-shadow: 0 0 3px #bcbcbc;
+  left: -30px;
+  top: 25px;
+}
+.more-actions:before,
+.more-actions:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.more-actions:before {
+  top: -9px;
+  left: 27px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+
+  border-bottom: 9px solid #cecece;
+}
+.more-actions:after {
+  top: -8px;
+  left: 28px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  border-bottom: 8px solid #ffffff;
+}
+.more-actions li,
+.tweet-actions li:focus > .more-actions,
+.tweet-actions li a:focus + .more-actions {
+  outline: none;
+  display: block;
+  color: #5241d6;
+}
+.more-actions li {
+  padding: 4px 4px;
+}
+
+@media (max-width: 890px) {
+  .related-content {
+    float: none;
+  }
+  .news-feed {
+    margin:0;
+  }
+
+  .page-container {
+    width: auto;
+    margin: 6px 4px;
+  }
+
+  .related-content {
+    width: auto;
+  }
+
+}
